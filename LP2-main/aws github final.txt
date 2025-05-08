@@ -1,0 +1,13 @@
+sudo yum update -y
+sudo yum install git -y
+sudo yum install httpd -y
+git clone https://github.com/VISHWAJEETMIRAGANE/resturant-page.git
+git clone https://github.com/Vedant024/To-Do-List-Application.git
+cd resturant-page
+cd To-Do-List-Application
+ls -l
+sudo cp -r * /var/www/html/
+ls -l /var/www/html/
+sudo systemctl start httpd
+sudo systemctl enable httpd
+sudo systemctl status httpd
